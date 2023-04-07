@@ -25,7 +25,7 @@ const cargarPeliculas = async() => {
 		// Si la respuesta es correcta
 		if(respuesta.status === 200){
 			const datos = await respuesta.json();
-			
+			console.log( datos );
 			let peliculas = '';
 			datos.results.forEach(pelicula => {
 				peliculas += `
